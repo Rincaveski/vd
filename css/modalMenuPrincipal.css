@@ -1,0 +1,41 @@
+.modal__MenuPrincipal {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../images/menuprincipal.png');
+  background-size: cover;
+  /* border-bottom: 2px solid #b2b6b9;
+  box-shadow: 0 1px 0 white; */
+  width: 1013px;
+  height: 782px;
+  display: block;
+}
+
+.modal__MenuPrincipal--fechar {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.modal__MenuPrincipal-lista {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 78%;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  display: grid;
+  position: relative;
+  top: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.modal__MenuPrincipal-item {
+  /* background-color: aqua; */
+  display: flex;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Padronização de estilos -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Estilos específicos -->
+  <link rel="stylesheet" href="./css/mosaico.css">
+  <link rel="stylesheet" href="./css/modalMenuAuxiliar.css">
+  <link rel="stylesheet" href="./css/modalMenuPrincipal.css">
+
+  <!-- Scripts -->
+  <script src="./js/mosaico.js" defer></script>
+  <script src="./js/menuPrincipal.js" defer></script>
+</head>
+<body>
+  <main class="mosaico">
+    <header class="mosaico__data">2024-01-204 09:16:45</header>
+    
+    <div class="mosaico__canal">
+      <span class="mosaico__canal-descricao">CAM 1</span>
+    </div>
+
+    <div class="mosaico__canal">
+      <span class="mosaico__canal-descricao">CAM 2</span>
+    </div>
+    
+    <div class="mosaico__canal">
+      <span class="mosaico__canal-descricao">CAM 3</span>
+    </div>
+    
+    <div class="mosaico__canal">
+      <span class="mosaico__canal-descricao">CAM 4</span>
+    </div>
+  </main>
+
+  <div class="modal__MenuAuxiliar">
+    <ul class="modal__MenuAuxiliar-lista">
+      <li class="modal__MenuAuxiliar-item">Visualizar 1</li>
+      <li class="modal__MenuAuxiliar-item">Visualizar 4</li>
+    </ul>
+
+    <ul class="modal__MenuAuxiliar-lista">
+      <li class="modal__MenuAuxiliar-item">Pan/Tilt/Zoom</li>
+      <li class="modal__MenuAuxiliar-item">Ajustar Imagem</li>
+    </ul>
+
+    <ul class="modal__MenuAuxiliar-lista">
+      <li class="modal__MenuAuxiliar-item">Buscar</li>
+      <li class="modal__MenuAuxiliar-item">Gravação</li>
+      <li class="modal__MenuAuxiliar-item">Saídas de Alarme</li>
+      <li class="modal__MenuAuxiliar-item">Matriz de Vídeo</li>
+      <li class="modal__MenuAuxiliar-item" data-auxiliar="menuPrincipal"="">Menu Principal</li>
+    </ul>
+  </div> 
+  
+  <div class="modal__MenuPrincipal">
+    <span class="modal__MenuPrincipal--fechar" data-principal="fechar"></span>
+    <ul class="modal__MenuPrincipal-lista">
+      <li class="modal__MenuPrincipal-item" data-principal="buscar"></li>
+      <li class="modal__MenuPrincipal-item" data-principal="info"></li>
+      <li class="modal__MenuPrincipal-item" data-principal="ajustes"></li>
+      <li class="modal__MenuPrincipal-item" data-principal="avancado"></li>
+      <li class="modal__MenuPrincipal-item" data-principal="backup"></li>
+      <li class="modal__MenuPrincipal-item" data-principal="desligar"></li>
+    </ul>
+  </div>
+</body>
+</html>
