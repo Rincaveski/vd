@@ -34,4 +34,13 @@ document.addEventListener('click', (e) => {
 fecharMenu.addEventListener('click', () => {
   modalMenuPrincipal.style.display = 'none';
   modalMenuPrincipal.style.backgroundImage = 'url(../images/menuprincipal.png)';
+  listaMenuPrincipal.style.gridTemplateColumns = 'repeat(3, 1fr)';
+  listaMenuPrincipal.innerHTML = `
+    <li class="modal__MenuPrincipal-item" data-principal="buscar"></li>
+    <li class="modal__MenuPrincipal-item" data-principal="info"></li>
+    <li class="modal__MenuPrincipal-item" data-principal="ajustes"></li>
+    <li class="modal__MenuPrincipal-item" data-principal="avancado"></li>
+    <li class="modal__MenuPrincipal-item" data-principal="backup"></li>
+    <li class="modal__MenuPrincipal-item" data-principal="desligar"></li>
+  `;
 })

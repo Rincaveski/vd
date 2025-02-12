@@ -10,7 +10,7 @@
   box-shadow: 0 1px 0 white; */
   width: 1013px;
   height: 782px;
-  display: block;
+  display: none;
 }
 
 .modal__MenuPrincipal--fechar {
